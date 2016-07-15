@@ -15844,7 +15844,7 @@ function $ParseProvider() {
         fn.$$watchDelegate = parsedExpression.$$watchDelegate;
       } else if (!interceptorFn.$stateful) {
         // If there is an interceptor, but no watchDelegate then treat the interceptor like
-        // we treat filters - it is assumed to be a pure function unless flagged with $stateful
+        // we treat filtros - it is assumed to be a pure function unless flagged with $stateful
         fn.$$watchDelegate = inputsWatchDelegate;
         useInputs = !parsedExpression.inputs;
         fn.inputs = parsedExpression.inputs ? parsedExpression.inputs : [parsedExpression];
@@ -18223,7 +18223,7 @@ function $SceDelegateProvider() {
      * See {@link ng.$sce $sce} for enabling strict contextual escaping.
      *
      * @param {string} type The kind of context in which this value is safe for use.  e.g. url,
-     *   resourceUrl, html, js and css.
+     *   resourceUrl, html, js and style.
      * @param {*} value The value that that should be considered trusted/safe.
      * @returns {*} A value that can be used to stand in for the provided `value` in places
      * where Angular expects a $sce.trustAs() return value.
@@ -19717,17 +19717,17 @@ function $FilterProvider($provide) {
   /**
    * @ngdoc method
    * @name $filterProvider#register
-   * @param {string|Object} name Name of the filter function, or an object map of filters where
+   * @param {string|Object} name Name of the filter function, or an object map of filtros where
    *    the keys are the filter names and the values are the filter factories.
    *
    *    <div class="alert alert-warning">
    *    **Note:** Filter names must be valid angular {@link expression} identifiers, such as `uppercase` or `orderBy`.
    *    Names with special characters, such as hyphens and dots, are not allowed. If you wish to namespace
-   *    your filters, then you can use capitalization (`myappSubsectionFilterx`) or underscores
+   *    your filtros, then you can use capitalization (`myappSubsectionFilterx`) or underscores
    *    (`myapp_subsection_filterx`).
    *    </div>
     * @param {Function} factory If the first argument was a string, a factory function for the filter to be registered.
-   * @returns {Object} Registered filter instance, or if a map of filters was provided then a map
+   * @returns {Object} Registered filter instance, or if a map of filtros was provided then a map
    *    of the registered filter instances.
    */
   function register(name, factory) {
@@ -25103,7 +25103,7 @@ var ngClassEvenDirective = classDirective('Even', 1);
         <div id="template2" class="ng-cloak">{{ 'world' }}</div>
      </file>
      <file name="protractor.js" type="protractor">
-       it('should remove the template directive and css class', function() {
+       it(style, function() {
          expect($('#template1').getAttribute('ng-cloak')).
            toBeNull();
          expect($('#template2').getAttribute('ng-cloak')).
@@ -31470,4 +31470,4 @@ $provide.value("$locale", {
 
 })(window);
 
-!window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
+!window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[stylea-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
