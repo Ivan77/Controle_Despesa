@@ -2,11 +2,11 @@
     'use strict';
 
     angular
-        .module('despesas.service')
+        .module('controleDespesa.service')
         .service('LoginService', LoginService);
 
     //injetar os servicos no parametro.
-    LoginService.$inject = [''];
+    //LoginService.$inject = [''];
 
     function LoginService(){
 

@@ -1,14 +1,12 @@
 (function(){
     'use strict';
 
-    angular
-        .module('despesas.controller')
+    angular.module('controleDespesa')
         .controller('LoginController', LoginController);
 
-    //injetar os servicos no parametro.
-    LoginController.$inject = ['LoginService'];
-
-    function LoginController(LoginService){
-
+    /* @ngInject */
+    function LoginController(){
+        var vm = this;
+        vm.entidade = {};
     }
-});
+})();

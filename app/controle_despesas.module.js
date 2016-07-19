@@ -1,16 +1,19 @@
 (function(){
     'use strict';
 
-    angular.module('despesas.controller', []);
-    angular.module('despesas.service', []);
-    angular.module('despesas.directive', []);
-    angular.module('despesas.filter', []);
+    angular.module('controleDespesa.controller', []);
+    angular.module('controleDespesa.service', []);
+    angular.module('controleDespesa.directive', []);
+    angular.module('controleDespesa.filter', []);
 
-    angular.module('despesas', [
+    angular.module('controleDespesa', [
         'ui.router',
-        'despesas.controller',
-        'despesas.service',
-        'despesas.directive',
-        'despesas.filter'
+        'oc.lazyLoad',
+        'ngMaterial',
+        'ui.bootstrap',
+        'controleDespesa.controller',
+        'controleDespesa.service',
+        'controleDespesa.directive',
+        'controleDespesa.filter'
     ]);
 })();

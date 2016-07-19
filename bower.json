@@ -1,5 +1,5 @@
 {
-  "name": "estudo_angular",
+  "name": "controleDespesa",
   "description": "",
   "main": "index.js",
   "authors": [
@@ -15,6 +15,13 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "^1.5.7"
+    "angular": "^1.5.7",
+    "angular-messages": "1.5.0-rc.1",
+    "bootstrap": "~3.3.6",
+    "font-awesome": "4.5.0",
+    "angular-material": "~1.0.2",
+    "angular-ui-router": "ui-router#~0.2.15",
+    "oclazyload": "~1.0.9",
+    "angular-bootstrap": "~1.1.1"
   }
 }

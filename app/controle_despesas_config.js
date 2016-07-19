@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('despesas').config(ConfigurarProjeto);
+        .module('controleDespesa').config(ConfigurarProjeto);
 
     function ConfigurarProjeto($stateProvider, $urlRouterProvider){
         $urlRouterProvider.otherwise('/login');
