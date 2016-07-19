@@ -33,21 +33,33 @@
 <body ng-app="controleDespesa">
     <div ng-controller="LoginController as vm" class="container">
 
-        <div class="row">
-            <md-content md-theme="docs-dark" layout-gt-sm="row" layout-padding="">
-                <div>
-                    <md-input-container>
-                        <label>Title</label>
-                        <input ng-model="user.title">
-                    </md-input-container>
 
-                    <md-input-container>
-                        <label>Email</label>
-                        <input ng-model="user.email" type="email">
-                    </md-input-container>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+
+                <div class="panel panel-primary">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <md-input-container class="md-block" flex-gt-sm>
+                                    <label>Email</label>
+                                    <input ng-model="user.email" type="email">
+                                </md-input-container>
+                            </div>
+
+                            <div class="col-md-12">
+                                <md-input-container class="md-block" flex-gt-sm>
+                                    <label>Senha</label>
+                                    <input ng-model="user.email" type="password">
+                                </md-input-container>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </md-content>
+
+            </div>
         </div>
+
 
     </div>
 </body>
