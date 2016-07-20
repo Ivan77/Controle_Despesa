@@ -16,7 +16,7 @@
 	box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
 }
 
-.footer_login {
+/*.footer_login {
 	text-align: center;
 }
 
@@ -44,5 +44,5 @@
 
 .footer_login img:hover { opacity: .83; }
 
-.footer_login img:focus , .footer_login a:focus { outline: none; }
+.footer_login img:focus , .footer_login a:focus { outline: none; }*/
 
