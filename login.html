@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"/>
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.css"/>
 
+    <link rel="stylesheet" href="app/style/css/style.css">
+
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-messages/angular-messages.js"></script>
 
@@ -31,35 +33,37 @@
 </head>
 
 <body ng-app="controleDespesa">
-    <div ng-controller="LoginController as vm" class="container">
+    <div ng-controller="LoginController as vm"
+         layout="column" layout-align="center center"
+         layout-fill="layout-fill">
 
-
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-
-                <div class="panel panel-primary">
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <md-input-container class="md-block" flex-gt-sm>
-                                    <label>Email</label>
-                                    <input ng-model="user.email" type="email">
-                                </md-input-container>
-                            </div>
-
-                            <div class="col-md-12">
-                                <md-input-container class="md-block" flex-gt-sm>
-                                    <label>Senha</label>
-                                    <input ng-model="user.email" type="password">
-                                </md-input-container>
-                            </div>
-                        </div>
-                    </div>
+        <div layout="column" class="loginBox md-whiteframe-z1">
+            <md-toolbar>
+                <h2 class="md-toolbar-tools"><span>Acesso</span></h2>
+            </md-toolbar>
+            <md-content layout="column" class="md-padding">
+                <md-input-container>
+                    <label>Email</label>
+                    <input type="email" ng-model="username"/>
+                </md-input-container>
+                <md-input-container>
+                    <label>Senha</label>
+                    <input type="password" ng-model="password"/>
+                </md-input-container>
+                <div layout="row" layout-align="center center" style="padding-top:20px;">
+                    <md-button class="md-raised md-primary">Login</md-button>
+                    <div flex="flex"></div>
+                    <md-button href="" md-no-ink="md-no-ink">Lembrar Senha</md-button>
                 </div>
-
-            </div>
+            </md-content>
         </div>
 
+        <footer class="footer_login">
+            <a href="http://www.polymer-project.org/" target="_blank">
+                <img src="https://www.polymer-project.org/images/logos/p-logo.svg">
+            </a>
+            <p>You Gotta Love <a href="http://www.polymer-project.org/" target="_blank">Google</a></p>
+        </footer>
 
     </div>
 </body>
