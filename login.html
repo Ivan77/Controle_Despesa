@@ -33,17 +33,29 @@
 </head>
 
 <body ng-app="controleDespesa">
+
+
     <div ng-controller="LoginController as vm"
          layout="column" layout-align="center center"
          layout-fill="layout-fill">
 
         <div layout="column" class="loginBox md-whiteframe-z1">
-            <md-toolbar>
+            <!--<md-toolbar>
                 <h2 class="md-toolbar-tools"><span>Acesso</span></h2>
+            </md-toolbar>-->
+            <md-toolbar>
+            <br>
+            <div class="row row-centered">
+                <img src="app/resource/avatar_2x.png" class="img-thumbnail">
+            </div>
+            <br>
             </md-toolbar>
+
             <md-content layout="column" class="md-padding">
-                <md-input-container>
+                <md-input-container class="md-block">
                     <label>Email</label>
+                    <!--<md-icon md-svg-src="img/icons/ic_email_24px.svg" class="email"></md-icon>-->
+                    </md-icon>
                     <input type="email" ng-model="username"/>
                 </md-input-container>
                 <md-input-container>
@@ -57,6 +69,28 @@
                 </div>
             </md-content>
         </div>
+
+    <!--<div class="container">
+        <div class="card card-container">
+            &lt;!&ndash; <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> &ndash;&gt;
+            <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+            <p id="profile-name" class="profile-name-card"></p>
+            <form class="form-signin">
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Usuario" required autofocus>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+                <div id="remember" class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Recordarme
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-success btn-block btn-signin" type="submit">Iniciar Sesión</button>
+            </form>&lt;!&ndash; /form &ndash;&gt;
+            <a href="#" class="forgot-password">
+                Forgot the password?
+            </a>
+        </div>
+    </div>-->
 
         <!--<footer class="footer_login">
             <a href="http://www.polymer-project.org/" target="_blank">
