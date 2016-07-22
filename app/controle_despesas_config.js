@@ -11,7 +11,13 @@
         $stateProvider
             .state('login', {
                 url: "/login",
-                templateUrl: "app/views/app-login/login.html"
-        });
+                templateUrl: "app/views/login/login.html"
+            });
+
+        $stateProvider
+            .state('lembrarSenha', {
+                url: "/lembrarSenha",
+                templateUrl: "app/views/login/login.html"
+            });
     }
 })();

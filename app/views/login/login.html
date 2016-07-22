@@ -1,0 +1,33 @@
+<div ng-controller="LoginController as vm"
+     layout="column" layout-align="center center"
+     layout-fill="layout-fill">
+
+    <div layout="column" class="loginBox md-whiteframe-z1">
+        <md-toolbar>
+        <br>
+        <div class="row row-centered">
+            <img src="app/resource/avatar_2x.png" class="img-thumbnail">
+        </div>
+        <br>
+        </md-toolbar>
+
+        <md-content layout="column" class="md-padding">
+            <md-input-container class="md-block">
+                <label>Email</label>
+                <!--<md-icon md-svg-src="img/icons/ic_email_24px.svg" class="email"></md-icon>-->
+                </md-icon>
+                <input type="email" ng-model="vm.usuario.email"/>
+            </md-input-container>
+            <md-input-container>
+                <label>Senha</label>
+                <input type="password" ng-model="vm.usuario.senha"/>
+            </md-input-container>
+            <div layout="row" layout-align="center center" style="padding-top:20px;">
+                <md-button class="md-raised md-primary">Login</md-button>
+                <div flex="flex"></div>
+                <md-button href="" md-no-ink="md-no-ink">Lembrar Senha</md-button>
+            </div>
+        </md-content>
+    </div>
+
+</div>
